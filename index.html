@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JKT48 Live Notification</title>
+        <link rel="icon" type="image/x-icon" href="./src/LOGO.jpg" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Chivo"
+			rel="stylesheet" />
+
+		<!-- Animate On Scroll -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+		<!-- Bootstrap Icon -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+		<style>
+			body {
+				background-color: rgb(70, 70, 70);
+				font-family: Chivo, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- AWAL NAVBAR -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">JKT48 Live Notification</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="tos.html">Terms of Service</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="privacy.html">Privacy Policy</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- AKHIR NAVBAR -->
+
+		<!-- AWAL ABOUT SECTION -->
+		<section class="container mt-5">
+			<div class="card mx-auto" style="max-width: 800px">
+				<div class="card-body">
+					<h2 class="card-title">About JKT48 Live Notification</h2>
+					<p class="card-text">
+						JKT48 Live Notification is a Discord bot that provides real-time
+						notifications for JKT48 live streams on Showroom and IDN Live. Stay
+						updated with your favorite JKT48 members' live streams and never
+						miss a moment!
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- AKHIR ABOUT SECTION -->
+
+		<!-- AWAL COMMANDS SECTION -->
+		<section class="container">
+			<div class="card mx-auto mt-3 mb-3" style="max-width: 800px">
+				<div class="card-body">
+					<p class="text-center fs-4 fw-bold">All Commands</p>
+					<div class="row row-cols-1 row-cols-md-2 g-4">
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">/whitelist</h5>
+									<p class="card-text">
+										Menambahkan whitelist channel untuk live notifications.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">/removewhitelist</h5>
+									<p class="card-text">
+										Menghapus whitelist channel untuk live notifications.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">/tagrole</h5>
+									<p class="card-text">
+										Role akan otomatis tertag saat notifikasi member sedang
+										live.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">/removetagrole</h5>
+									<p class="card-text">
+										Menghapus tag role saat notifikasi member sedang live.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- AKHIR COMMANDS SECTION -->
+
+		<!-- AWAL PERMISSION SECTION -->
+		<section class="container">
+			<div class="card mx-auto mt-3 mb-3" style="max-width: 800px">
+				<p class="text-center fs-4 fw-bold mt-3">All Permissions</p>
+				<div class="card-group">
+					<div class="card">
+                        <img src="./src/view_channel.png" class="card-img-top" alt="view_channel">
+						<div class="card-body">
+							<h5 class="card-title">View Channel</h5>
+							<p class="card-text">
+								Agar bot bisa mengakses channel yang anda whitelist.
+							</p>
+						</div>
+					</div>
+					<div class="card">
+                        <img src="./src/send_message.png" class="card-img-top" alt="send_message">
+						<div class="card-body">
+							<h5 class="card-title">Send Message</h5>
+							<p class="card-text">
+								Agar bot bisa mengirimkan Live Notification pada channel anda.
+							</p>
+						</div>
+					</div>
+					<div class="card">
+                        <img src="./src/embed_links.png" class="card-img-top" alt="embed_links">
+						<div class="card-body">
+							<h5 class="card-title">Embed Links</h5>
+							<p class="card-text">
+								Agar bot bisa mengirimkan embed message pada channel anda.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- AKHIR PERMISSION SECTION -->
+
+		<footer class="footer bg-dark text-white text-center p-3">
+			<p>&copy; 2024 JKT48 Live Notification</p>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+			crossorigin="anonymous"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>
